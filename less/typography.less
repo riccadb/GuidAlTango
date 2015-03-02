@@ -1,0 +1,67 @@
+/* TYPOGRAPHY
+*******************************************************************************************/
+
+@import "font/font.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700);
+
+@serif: Georgia;
+@sans:'Open Sans', sans-serif;
+ 
+.f-base (@weight; @px; @rem) {
+    font-family:@sans;
+    font-weight:@weight;
+    font-size: @px; 
+    font-size: @rem;    
+    color:@dark;
+}
+
+.f-title (@weight; @px; @rem){
+    font-weight:@weight;
+    font-family:@serif;
+    font-size: @px; 
+    font-size: @rem;  
+    font-style:normal;
+    text-decoration: none;
+    color:@dark;
+}
+
+
+.f-size(@px;@rem;) {
+    font-size: @px; 
+    font-size: @rem;
+}
+
+html{font-size:62.5%;}
+
+body, .lead, blockquote {
+    .f-base(500; 14px;1.4rem;);
+    line-height:150%;
+}
+
+p {
+    padding-bottom: 15px;
+    color:@dark;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family:@serif;
+    font-weight:500;
+    color:@dark;
+}
+
+a {
+    color:@blu;
+    font-family: @sans;
+    
+    text-decoration: none;
+    font-weight:700;
+
+    -webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+

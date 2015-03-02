@@ -1,0 +1,102 @@
+
+/*
+@yellow: #ffd56e;
+@green: #283A26;
+@light: #ffffff;
+@blue: #16283A;
+@violet: #F05FCD;
+@lblue:#92BFEC;
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    padding-top:0;
+    background-color: @light;
+    color:@dark;
+}
+
+*/
+
+@dark: #000;
+@red:#300;
+@lgrey: #ccc;
+@grey:#666;
+@light:#fff;
+
+body {
+    background-color: @dark;
+    padding-top:45px;
+}
+
+hr {
+    color: @grey;
+}
+.container {
+    background-color: @lgrey;
+}
+
+.home .panel-grid {
+    
+    padding: 50px 4% 0;
+
+    .panel {
+        padding: 10px 20px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: none;
+            .widget-title {
+                text-align: center;
+            }
+        }
+
+    .blurb {
+        font-size: 22px;
+    }
+}
+.navbar .container {
+    background: none;
+}
+
+.home .metaslider {
+    margin:auto;
+}
+
+.t-all (@time) {
+    -webkit-transition: all @time;
+    transition: all @time;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius:@radius;
+    -moz-border-radius:@radius;
+    -o-border-radius:@radius;
+    -ms-border-radius:@radius;
+    border-radius:@radius;
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow:@shadow;
+    -moz-box-shadow:@shadow;
+    -o-box-shadow:@shadow;
+    -ms-box-shadow:@shadow;
+    box-shadow:@shadow;
+}
+
+
+.cf {
+    &:before,
+        
+    &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    }
+
+    &:after {
+    clear: both;
+    }
+
+    *zoom: 1;
+}
+

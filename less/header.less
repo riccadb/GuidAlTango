@@ -1,0 +1,89 @@
+
+.navbar-default {
+	border:0;
+	background: fade(@dark,20%);
+
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+
+	a.navbar-brand,
+	a:hover.navbar-brand,
+	a:active.navbar-brand,
+	a:visited.navbar-brand {
+            color:@lgrey;
+            line-height:66px;
+            padding:0 23px;
+        }	
+
+    .navbar-nav>.active>a, 
+    .navbar-nav>.active>a:hover, 
+    .navbar-default .navbar-nav>.active>a:focus {
+		background:none;    	
+    }
+
+    .navbar-nav>li>a {
+		color:@lgrey;
+		.t-all(3sec);
+
+
+	    -webkit-transition: color 0.3s; /* Safari */
+    	transition: color 0.3s;
+	}
+
+    .navbar-nav>li>a:hover,
+    .navbar-nav>.active>a, 
+    .navbar-nav>.active>a:hover, 
+    .navbar-default .navbar-nav>.active>a:focus {
+		color:@lgrey;    	
+		text-decoration: underline;
+    }
+}
+.navbar-default.nav-bkg {
+	-webkit-box-shadow:0 0 10px 1px #111111;
+	-moz-box-shadow:0 0 10px 1px #111111;
+	-os-box-shadow:0 0 10px 1px #111111;
+	-ms-box-shadow:0 0 10px 1px #111111;
+	box-shadow:0 0 10px 1px #111111;
+	background:@red;
+}
+
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+	border:none;
+	-webbit-box-shadow:none;
+	box-shadow: none;
+}
+
+.navbar-nav>li>a {
+	color:@lgrey;
+}
+.navbar-nav>li>.small-nav {
+}
+
+.navbar-toggle {
+	margin-top: 18px;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle>.icon-bar {
+	background-color: @red;
+}
+
+.navbar-default .navbar-toggle:hover>.icon-bar, 
+.navbar-default .navbar-toggle:focus>.icon-bar {
+	background-color: @dark;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: @red;
+}
+
+.navbar-default.l-head {
+	background-color:@light;
+}
+
+.navbar-nav {
+	float:right;
+}
